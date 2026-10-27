@@ -2,15 +2,15 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#0A1E21">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>دنتا كير | نظام إدارة عيادات الأسنان</title>
-<meta name="description" content="برنامج عربي متكامل لإدارة عيادات الأسنان: مرضى، مواعيد، أشعة، مختبرات وحسابات. تفعيل دائم بدون اشتراكات.">
+<meta name="description" content="برنامج عربي متكامل لإدارة عيادات الأسنان: مرضى، مواعيد، أشعة، مختبرات وحسابات. شهر تجريبي مجاني، تفعيل سنوي 175$ أو دائم 650$ لفترة محدودة، ودعم فني مباشر.">
+<meta property="og:title" content="دنتا كير | نظام إدارة عيادات الأسنان"><meta property="og:description" content="جرّب البرنامج مجاناً لمدة شهر، ثم اختر التفعيل السنوي أو الدائم. عرض لفترة محدودة ودعم فني مباشر."><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Cairo:wght@600;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6FAF9;--fg:#0B2E33;--card:#fff;--line:#D6E6E3;--mute:#4F6B6E;--mint:#DDF3EF;--teal:#19B5A5;--ink:#0B2E33;--glow:rgba(25,181,165,.22)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0A1E21;--fg:#E8F5F3;--card:#102A2E;--line:#1F4045;--mute:#9DBDBA;--mint:#12363B;--ink:#06181B}}
-:root[data-theme=dark]{--bg:#0A1E21;--fg:#E8F5F3;--card:#102A2E;--line:#1F4045;--mute:#9DBDBA;--mint:#12363B;--ink:#06181B}
+:root{color-scheme:dark;--bg:#0A1E21;--fg:#EAF6F4;--card:#0F2A2F;--line:#1E4349;--mute:#9DBDBA;--mint:#10343A;--teal:#19B5A5;--ink:#06181B;--glow:rgba(25,181,165,.25)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px;height:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.8 'IBM Plex Sans Arabic',Tahoma,sans-serif;overflow-x:hidden;padding-top:env(safe-area-inset-top,0)}
@@ -23,8 +23,8 @@ a{color:inherit;text-decoration:none}
 header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
 header .w{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;font:900 22px Cairo}
-.logo i{width:36px;height:36px;border-radius:10px;background:var(--ink);display:grid;place-items:center}
-.logo svg{width:20px;fill:var(--teal)}
+.logo i{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#0F4C4A,#19B5A5);box-shadow:0 6px 18px -6px var(--teal);display:grid;place-items:center}
+.logo svg{width:20px;fill:#fff}
 nav{display:flex;gap:28px;font-size:15px}
 nav a{color:var(--mute);position:relative;transition:color .2s}
 nav a:after{content:"";position:absolute;inset-inline:0;bottom:-2px;height:2px;background:var(--teal);transform:scaleX(0);transition:transform .3s}
@@ -141,9 +141,9 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:18px}
 .price{font:900 56px Cairo;color:var(--teal);line-height:1.2}
 .badge{position:absolute;top:-1px;inset-inline-end:24px;background:var(--teal);color:#06282B;font-size:12px;font-weight:700;border-radius:0 0 10px 10px;padding:4px 14px}
 .cmp{margin-top:18px}
-.cb{display:grid;grid-template-columns:90px 1fr 56px;gap:12px;align-items:center;margin-top:12px;font-size:14px}
+.cb{display:grid;grid-template-columns:130px 1fr 74px;gap:12px;align-items:center;margin-top:12px;font-size:14px}
 .cb i{display:block;height:14px;border-radius:7px;width:0;background:#EF8A7A;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
-.cb.o i{background:var(--teal)}
+.cb.o i{background:var(--teal)}.cb.a i{background:#5FD3C6}.cg{margin-top:20px}.cg>b{font:800 15px Cairo}
 /* faq */
 .fq{max-width:760px;margin:36px auto 0}
 .fq .it{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;transition:border-color .3s}
@@ -183,7 +183,7 @@ footer .w>*{position:relative}
 .xclk{color:#8CA3BC;padding:6px;text-align:center}
 .xmain{flex:1;min-width:0;display:flex;flex-direction:column}
 .xtop{background:#fff;border-bottom:1px solid #E3E9F2;padding:10px 14px;display:flex;align-items:center;gap:8px;flex:none;white-space:nowrap;font-size:13px}
-.xtop .xcmb{width:180px;flex:none}.xtop .xbt{padding:6px 9px;font-size:12.5px;flex:none}.xtop{gap:6px;font-size:12.5px}.xinfo{overflow:hidden;text-overflow:ellipsis;min-width:0}
+.xtop .xcmb{width:165px;flex:none}.xtop .xbt{padding:6px 9px;font-size:12.5px;flex:none}.xtop{gap:6px;font-size:12.5px}.xinfo{flex:none}
 .xstack{flex:1;min-height:0;position:relative}
 .xpg{position:absolute;inset:0;padding:20px 26px;display:flex;flex-direction:column;gap:10px;animation:xin .35s ease}
 @keyframes xin{from{opacity:0;transform:translateX(20px)}}
@@ -233,15 +233,53 @@ footer .w>*{position:relative}
 .box canvas{display:block;width:100%;height:100%}
 @media(max-width:860px){nav{display:none}.hg,.v3,.pg,.two{grid-template-columns:1fr}.fg,.sg{grid-template-columns:1fr}.sg:before{display:none}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border:0}.dash{grid-template-columns:1fr}.side{display:none}.sts{grid-template-columns:1fr 1fr}.full ul{grid-template-columns:1fr}.teeth{gap:3px}.teeth button{font-size:9px}.dl{display:none}section{padding:64px 0}}
 .fail [data-r]{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}h1 .wd,.hp,.cta,.note,.chip,[data-r]{opacity:1;transform:none}.tooth .o{stroke-dashoffset:0}.tooth .f{opacity:1}.doctor-hero{animation:none}}
+@media(prefers-reduced-motion:reduce){.trust,.ann{opacity:1}.ring2 .fg{stroke-dashoffset:452.4}*,*:before{animation:none!important;transition:none!important}h1 .wd,.hp,.cta,.note,.chip,[data-r]{opacity:1;transform:none}.tooth .o{stroke-dashoffset:0}.tooth .f{opacity:1}.doctor-hero{animation:none}}
+
+.ann{background:linear-gradient(90deg,#0B6F65,#19B5A5,#0B6F65);background-size:200% 100%;animation:sh 7s linear infinite;color:#032421;text-align:center;font-weight:600;font-size:14px;padding:9px 14px;position:relative;z-index:60}
+.ann a{display:block}.ann s{opacity:.6}.ann b{font-weight:800}.ann .go{background:rgba(3,36,33,.14);border-radius:99px;padding:1px 12px;white-space:nowrap}
+.trust{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--mute);opacity:0;animation:up .8s 1.1s forwards}
+.offer{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;margin:34px auto 0;max-width:780px;background:linear-gradient(100deg,rgba(25,181,165,.2),rgba(25,181,165,.05));border:1px solid var(--teal);border-radius:20px;padding:14px 26px;text-align:center}
+.offer b{font:800 19px Cairo}
+.cdn{display:flex;gap:8px}.cdn span{background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:4px 10px;font-size:11px;color:var(--mute);text-align:center;line-height:1.3}.cdn b{display:block;font:800 20px Cairo;color:var(--teal)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 28px 28px;transition:transform .35s,border-color .35s,box-shadow .35s}
+.plan:hover{transform:translateY(-8px);border-color:var(--teal);box-shadow:0 30px 60px -36px var(--teal)}
+.plan.ft{background:linear-gradient(180deg,#11403F,var(--card) 70%);border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),0 40px 90px -44px var(--teal)}
+.plan h3{font-size:23px}
+.pr{margin:20px 0 6px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pr .now{font:900 58px/1 Cairo;color:var(--teal)}
+.pr .old{font:700 24px Cairo;color:var(--mute);text-decoration:line-through;text-decoration-color:#EF8A7A;text-decoration-thickness:2px}
+.pr small{color:var(--mute);font-size:15px}
+.save{align-self:flex-start;background:rgba(239,138,122,.14);color:#FFB4A6;border:1px solid rgba(239,138,122,.45);border-radius:99px;padding:2px 14px;font-size:13px;font-weight:600}
+.plan ul{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:10px;flex:1;align-content:start;font-size:15px}
+.plan li:before{content:"✓";color:var(--teal);font-weight:900;margin-inline-end:9px}
+.ribbon{position:absolute;top:-1px;inset-inline-end:26px;background:var(--teal);color:#032421;font-size:12px;font-weight:800;border-radius:0 0 12px 12px;padding:6px 14px}
+.inc{display:flex;gap:10px 12px;flex-wrap:wrap;justify-content:center;margin-top:32px}
+.inc span{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 18px;font-size:14px}
+.imps{background:linear-gradient(180deg,transparent,rgba(25,181,165,.07),transparent)}
+.imp{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.ring2{position:relative;width:min(300px,72vw);aspect-ratio:1;margin:auto}
+.ring2 svg{width:100%;height:100%;transform:rotate(-90deg);filter:drop-shadow(0 0 22px var(--glow))}
+.ring2 circle{fill:none;stroke-width:12;stroke-linecap:round}.ring2 .bg{stroke:var(--line)}
+.ring2 .fg{stroke:var(--teal);stroke-dasharray:565.5;stroke-dashoffset:565.5;transition:stroke-dashoffset 2.2s .3s cubic-bezier(.2,.8,.2,1)}
+.ring2.in .fg{stroke-dashoffset:452.4}
+.ring2 b{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font:900 76px/1 Cairo;color:var(--fg)}
+.ring2 small{font:500 16px 'IBM Plex Sans Arabic';color:var(--mute);margin-top:6px}
+.chk{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px}
+.chk li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 20px;display:grid;gap:2px;transition:border-color .3s,transform .3s}
+.chk li:hover{border-color:var(--teal);transform:translateX(-6px)}.chk span{color:var(--mute);font-size:15px}
+.chans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.chan{text-align:center;display:block}.chan .ico{margin:auto}.chan h3{font-size:20px;margin:16px 0 6px}.chan p{margin:0;font:700 18px Cairo}.chan>span{display:inline-block;margin-top:14px;color:var(--teal);font-weight:600}
+@media(max-width:960px){.plans,.chans,.imp{grid-template-columns:1fr}.imp{gap:30px}.ann{font-size:13px}.pr .now{font-size:50px}}
 </style>
 </head>
 <body>
 <div id="bar"></div>
+<div class="ann"><a href="#pricing">🎉 عرض لفترة محدودة: السنوي <s>250$</s> <b>175$</b> &nbsp;·&nbsp; الدائم <s>799$</s> <b>650$</b> &nbsp;<span class="go">اغتنم العرض ←</span></a></div>
 <header><div class="w">
 <a href="#top" class="logo"><i><svg viewBox="0 0 130 160"><path d="M20 40c0-25 22-32 45-32s45 7 45 32c0 22-8 34-12 58-3 22-6 52-18 52-9 0-8-30-15-30s-6 30-15 30c-12 0-15-30-18-52-4-24-12-36-12-58z"/></svg></i><span dir="ltr">DentaCare</span></a>
-<nav><a href="#features">المزايا</a><a href="#preview">المعاينة</a><a href="#pricing">الأسعار</a><a href="#faq">الأسئلة</a></nav>
-<div class="tools"><button class="ic" id="th" aria-label="تبديل الوضع الليلي">◐</button><a class="btn p sm dl" href="./DentaCare.exe" download="DentaCare.exe">تحميل البرنامج</a></div>
+<nav><a href="#features">المزايا</a><a href="#preview">المعاينة</a><a href="#pricing">الأسعار</a><a href="#impact">الأثر الخيري</a><a href="#support">الدعم</a><a href="#faq">الأسئلة</a></nav>
+<div class="tools"><a class="btn p sm dl" href="./DentaCare.exe" download="DentaCare.exe">تحميل البرنامج</a></div>
 </div></header>
 <noscript><p style="text-align:center;padding:16px">يتطلب هذا الموقع تفعيل JavaScript.</p></noscript>
 
@@ -251,8 +289,8 @@ footer .w>*{position:relative}
 <span class="pill"><b></b>نظام متكامل لإدارة عيادات الأسنان</span>
 <h1 id="h1">كل ما تحتاجه عيادتك، <span class="g">في برنامج واحد</span></h1>
 <p class="hp">مرضى ومواعيد وعلاجات وأشعة ومختبرات وحسابات، بواجهة عربية. يعمل على جهازك مباشرة، فلا يتوقف الدوام إذا انقطع الإنترنت.</p>
-<div class="cta"><a class="btn p mg" target="_blank" rel="noopener" href="https://wa.me/972569934309?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">💬 تواصل عبر واتساب</a><a class="btn mg" href="#preview">جرّب الواجهة الآن</a><a class="btn mg" href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">✉️ راسلنا بالبريد</a></div>
-<p class="note mute">تجربة مجانية لمدة شهرين · تفعيل دائم · بلا اشتراكات شهرية</p>
+<div class="cta"><a class="btn p mg" href="./DentaCare.exe" download="DentaCare.exe">⬇️ جرّبه مجاناً لمدة شهر</a><a class="btn mg" href="#preview">جرّب الواجهة الآن</a><a class="btn mg" target="_blank" rel="noopener" href="https://wa.me/972569934309" data-wa="السلام عليكم، أرغب بالتواصل بخصوص دنتا كير">💬 تواصل عبر واتساب</a></div>
+<ul class="trust"><li>🎁 شهر مجاني من تاريخ التفعيل</li><li>🔑 تفعيل سنوي أو دائم</li><li>🛟 دعم فني مباشر</li><li>💚 20% من الأرباح للأعمال الخيرية</li></ul>
 </div>
 <div class="stage" id="stage">
 <div class="ring"></div><div class="ring b"></div>
@@ -288,31 +326,59 @@ footer .w>*{position:relative}
 <h2 data-r>ثلاث خطوات وتعمل عيادتك</h2>
 <div class="sg" id="sg">
 <div class="card" data-r><div class="ico">⬇️</div><h3>حمّل وثبّت</h3><p>نزّل ملف التثبيت وثبّته على جهاز العيادة في دقائق.</p></div>
-<div class="card" data-r style="--d:.15s"><div class="ico">⏳</div><h3>جرّبه شهرين مجاناً</h3><p>استخدم كل الأقسام على بيانات عيادتك الفعلية.</p></div>
-<div class="card" data-r style="--d:.3s"><div class="ico">🔑</div><h3>فعّله مرة واحدة</h3><p>ترخيص دائم واحد للعيادة كلها بلا اشتراكات.</p></div>
+<div class="card" data-r style="--d:.15s"><div class="ico">⏳</div><h3>جرّبه شهراً مجاناً</h3><p>تبدأ التجربة من تاريخ تفعيل البرنامج، بكل الأقسام وعلى بيانات عيادتك الفعلية.</p></div>
+<div class="card" data-r style="--d:.3s"><div class="ico">🔑</div><h3>اختر سنوي أو دائم</h3><p>فعّل النظام الذي يناسبك لعيادتك كلها، ويرافقك الدعم الفني في كل مرحلة.</p></div>
 </div></div></section>
 
-<section id="pricing" style="padding-top:24px"><div class="w">
-<h2 data-r>ادفع مرة واحدة فقط</h2><p class="sub" data-r>أغلب برامج العيادات الأجنبية بالاشتراك الشهري. دنتا كير بتفعيل دائم.</p>
-<div class="pg">
-<div class="card" data-r><h3 style="margin-top:0">نسخة تجريبية</h3><div class="price" style="color:var(--fg);font-size:40px">مجاناً <small class="mute" style="font:400 16px 'IBM Plex Sans Arabic'">لمدة شهرين</small></div>
-<ul><li>استخدام البرنامج شهرين كاملين</li><li>كل الأقسام متاحة للتقييم</li><li>دعم عبر واتساب</li></ul>
-<p style="margin-top:28px"><a class="btn mg" href="./DentaCare.exe" download="DentaCare.exe">⬇️ تحميل البرنامج</a></p><p class="mute" style="font-size:12px;margin:10px 0 0">لنظام Windows · 24.6 MB · الإصدار 1.0.0</p></div>
-<div class="card full" data-r style="--d:.12s"><span class="badge">ترخيص العيادة</span><h3 style="margin-top:0">التفعيل الدائم</h3><div class="price">699$ <small style="font:400 16px 'IBM Plex Sans Arabic';color:#E8F5F3;opacity:.7">دفعة واحدة</small></div>
-<ul><li>تفعيل دائم بلا اشتراكات</li><li>ترخيص واحد للعيادة كلها</li><li>أجهزة فرعية بدون ترخيص</li><li>السجل الطبي والمخطط السني</li><li>عارض DICOM / STL</li><li>تذكيرات واتساب وكشوف الحساب</li><li>مختبرات ومخزون وتقارير</li><li>صلاحيات ونسخ احتياطي</li></ul>
-<p style="margin-top:28px"><a class="btn p mg" target="_blank" rel="noopener" href="https://wa.me/972569934309?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D9%85%20%D9%84%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">🛒 اشترِ التفعيل الدائم</a> <a class="btn mg" href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">✉️ راسلنا بالبريد</a></p></div>
+<section id="pricing"><div class="w">
+<h2 data-r style="margin-inline:auto;text-align:center">اختر نظام التفعيل الذي يناسب عيادتك</h2>
+<p class="sub" data-r style="margin-inline:auto;text-align:center">ابدأ بشهر مجاني من تاريخ التفعيل، ثم اختر بين الاشتراك السنوي أو التفعيل الدائم. الدعم الفني مرافق لك في كل الخيارات.</p>
+<div class="offer" data-r><span style="font-size:30px">🎉</span><div><b>عرض لفترة محدودة</b><br><span class="mute">خصم خاص على نظامي التفعيل: السنوي والدائم</span></div><div class="cdn" id="cdn" hidden></div></div>
+<div class="plans">
+<div class="plan" data-r><h3>تجربة مجانية</h3><p class="mute" style="margin:4px 0 0">جرّب كل شيء قبل أن تقرر</p>
+<div class="pr"><span class="now" style="color:var(--fg);font-size:46px">مجاناً</span></div><p class="mute" style="margin:0">شهر كامل من تاريخ التفعيل</p>
+<ul><li>جميع أقسام البرنامج متاحة</li><li>تجربة على بيانات عيادتك الفعلية</li><li>دعم فني أثناء التجربة</li><li>بدون أي التزام</li></ul>
+<a class="btn mg" href="./DentaCare.exe" download="DentaCare.exe" style="justify-content:center">⬇️ تحميل البرنامج</a><p class="mute" style="font-size:12px;margin:10px 0 0;text-align:center">لنظام Windows · 24.6 MB · الإصدار 1.0.0</p></div>
+<div class="plan" data-r style="--d:.1s"><span class="ribbon">عرض لفترة محدودة</span><h3>التفعيل السنوي</h3><p class="mute" style="margin:4px 0 0">للعيادات التي تفضّل دفعة سنوية</p>
+<div class="pr"><span class="now">175$</span><span class="old">250$</span><small>/ سنة</small></div><span class="save">وفّر 75$ على السنة الأولى</span>
+<ul><li>جميع مزايا البرنامج</li><li>ترخيص واحد للعيادة كلها</li><li>أجهزة فرعية بدون ترخيص إضافي</li><li>تذكيرات واتساب وكشوف الحساب</li><li>مختبرات ومخزون وتقارير</li><li>دعم فني مباشر طوال مدة الاشتراك</li></ul>
+<a class="btn p mg" target="_blank" rel="noopener" href="https://wa.me/972569934309" data-wa="السلام عليكم، أرغب بشراء التفعيل السنوي لدنتا كير (175$)" style="justify-content:center">🛒 اشترِ التفعيل السنوي</a></div>
+<div class="plan ft" data-r style="--d:.2s"><span class="ribbon">الأوفر على المدى الطويل</span><h3>التفعيل الدائم</h3><p class="mute" style="margin:4px 0 0">ادفع مرة واحدة واستمر بلا تجديد</p>
+<div class="pr"><span class="now">650$</span><span class="old">799$</span><small>دفعة واحدة</small></div><span class="save">وفّر 149$</span>
+<ul><li>تفعيل دائم بلا تجديد سنوي</li><li>ترخيص واحد للعيادة كلها</li><li>أجهزة فرعية بدون ترخيص إضافي</li><li>السجل الطبي والمخطط السني</li><li>عارض DICOM / STL وصور الأشعة</li><li>مختبرات ومخزون وتقارير</li><li>صلاحيات ونسخ احتياطي</li><li>دعم فني مباشر لأي استفسار</li></ul>
+<a class="btn p mg" target="_blank" rel="noopener" href="https://wa.me/972569934309" data-wa="السلام عليكم، أرغب بشراء التفعيل الدائم لدنتا كير (650$)" style="justify-content:center">🛒 اشترِ التفعيل الدائم</a></div>
 </div>
-<div class="card cmp" data-r id="cmp"><h3 style="margin:0 0 6px;font-size:18px">قارن بالاشتراك الشهري</h3><p class="mute" style="font-size:13px;margin:0">مثال: اشتراك 100$ شهرياً. الأرقام تقديرية وتختلف حسب المزوّد.</p></div>
+<div class="inc" data-r><span>🛟 دعم فني لأي استفسار أو مساعدة</span><span>💚 20% من الأرباح لمشاريع خيرية</span><span>🔒 بياناتك على جهازك</span><span>📶 يعمل بدون إنترنت</span></div>
+<p class="mute" data-r style="text-align:center;font-size:13px;margin:18px 0 0">الأسعار بالدولار الأمريكي. العرض لفترة محدودة وقد ينتهي في أي وقت، تواصل معنا لتأكيد السعر الساري. <a href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1" style="color:var(--teal);text-decoration:underline">راسلنا بالبريد</a></p>
+<div class="card cmp" data-r id="cmp" style="margin-top:44px"><h3 style="margin:0 0 6px;font-size:19px">كم توفّر مقارنةً باشتراك شهري؟</h3><p class="mute" style="font-size:13px;margin:0">مثال: برنامج باشتراك 100$ شهرياً. الأرقام تقديرية وتختلف حسب المزوّد.</p></div>
+</div></section>
+
+<section id="impact" class="imps"><div class="w imp">
+<div class="ring2" id="impring" data-r><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="bg" cx="100" cy="100" r="90"/><circle class="fg" cx="100" cy="100" r="90"/></svg><b><span data-n="20" data-s="%">0</span><small>من أرباحنا</small></b></div>
+<div data-r style="--d:.15s"><h2>خُمس أرباحنا يذهب إلى مشاريع خيرية</h2>
+<p class="sub" style="max-width:none">نؤمن أن التقنية الجيدة يجب أن تترك أثراً. لذلك نخصص 20% من أرباح دنتا كير لدعم المشاريع الخيرية، وكل عيادة تعتمد على دنتا كير تشاركنا هذا العطاء.</p>
+<ul class="chk"><li><b>💚 مع كل تفعيل</b><span>جزء من قيمته يعود إلى الخير.</span></li><li><b>🤝 عيادتك شريكة في الأثر</b><span>اختيارك لدنتا كير يساهم في مساعدة من يحتاج.</span></li><li><b>🦷 خدمة تُتقن عملها</b><span>نبني برنامجاً يخدم عيادتك ومجتمعك معاً.</span></li></ul></div>
+</div></section>
+
+<section id="support"><div class="w">
+<h2 data-r style="margin-inline:auto;text-align:center">دعم فني لأي استفسار أو مساعدة</h2>
+<p class="sub" data-r style="margin-inline:auto;text-align:center">تتواصل مباشرة مع المطوّر م. محمود نجاجرة، والدعم الفني مشمول مع التجربة المجانية والتفعيل السنوي والدائم.</p>
+<div class="chans">
+<a class="card chan" data-r target="_blank" rel="noopener" href="https://wa.me/972569934309" data-wa="السلام عليكم، لدي استفسار بخصوص دنتا كير"><div class="ico">💬</div><h3>واتساب</h3><p dir="ltr">+972 56 993 4309</p><span>ابدأ محادثة الآن</span></a>
+<a class="card chan" data-r style="--d:.1s" href="tel:+972569934309"><div class="ico">📞</div><h3>اتصال هاتفي</h3><p dir="ltr">+972 56 993 4309</p><span>اتصل بنا مباشرة</span></a>
+<a class="card chan" data-r style="--d:.2s" href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1"><div class="ico">✉️</div><h3>البريد الإلكتروني</h3><p dir="ltr" style="font-size:15px">dentacare1soft@gmail.com</p><span>أرسل استفسارك</span></a>
+</div>
+<div class="inc" data-r><span>مساعدة في التثبيت والتفعيل</span><span>الإجابة عن أي استفسار حول البرنامج</span><span>إرشاد في النسخ الاحتياطي ونقل البيانات</span><span>ربط جهاز الاستقبال بجهاز الطبيب</span></div>
 </div></section>
 
 <section id="faq" style="padding-top:24px"><div class="w"><h2 data-r style="margin:auto;text-align:center">أسئلة شائعة</h2><div class="fq" id="fq"></div></div></section>
 </main>
 
 <footer><div class="w">
-<h2 style="margin:auto;max-width:none;font-size:clamp(28px,4.5vw,46px)">جرّب دنتا كير على عيادتك</h2>
-<p style="opacity:.75;margin:14px 0 0">ابدأ بتجربة مجانية لمدة شهرين، ثم فعّل النسخة الدائمة.</p>
-<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px"><a class="btn p mg" target="_blank" rel="noopener" href="https://wa.me/972569934309">💬 تواصل عبر واتساب</a><a class="btn mg" href="tel:+972569934309">📞 اتصل الآن</a><a class="btn mg" href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">✉️ راسلنا بالبريد</a></div>
-<div class="fb"><span>دنتا كير | نظام إدارة عيادات الأسنان</span><span dir="ltr">م. محمود نجاجرة · +972569934309 · dentacare1soft@gmail.com</span></div>
+<h2 style="margin:auto;max-width:none;font-size:clamp(28px,4.5vw,46px)">ابدأ شهرك المجاني اليوم</h2>
+<p style="opacity:.8;margin:14px auto 0;max-width:620px">حمّل البرنامج وجرّبه مجاناً لمدة شهر من تاريخ التفعيل، ثم اختر التفعيل السنوي 175$ أو الدائم 650$. عرض لفترة محدودة، ودعم فني مباشر في كل الأحوال.</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px"><a class="btn p mg" href="./DentaCare.exe" download="DentaCare.exe">⬇️ تحميل البرنامج</a><a class="btn mg" target="_blank" rel="noopener" href="https://wa.me/972569934309">💬 تواصل عبر واتساب</a><a class="btn mg" href="tel:+972569934309">📞 اتصل الآن</a><a class="btn mg" href="mailto:dentacare1soft@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%86%D8%AA%D8%A7%20%D9%83%D9%8A%D8%B1">✉️ راسلنا بالبريد</a></div>
+<div class="fb"><span>دنتا كير | نظام إدارة عيادات الأسنان · 💚 20% من الأرباح للأعمال الخيرية</span><span dir="ltr">م. محمود نجاجرة · +972569934309 · dentacare1soft@gmail.com</span></div>
 </div></footer>
 <a class="fab" href="https://wa.me/972569934309" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
 
@@ -321,9 +387,6 @@ footer .w>*{position:relative}
 addEventListener("error",()=>document.documentElement.classList.add("fail"));
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
-// theme
-const root=document.documentElement;try{const s=localStorage.getItem('th');if(s)root.dataset.theme=s}catch(e){}
-$('#th').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=d?'light':'dark';try{localStorage.setItem('th',root.dataset.theme)}catch(e){}};
 // headline word split
 const h1=$('#h1');let k=0;
 h1.childNodes.forEach(n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.trim().split(/\s+/).forEach(w=>{const s=document.createElement('span');s.className='wd';s.style.animationDelay=(.1+k++*.09)+'s';s.textContent=w;f.append(s,' ')});n.replaceWith(f)}else{n.classList.add('wd');n.style.animationDelay=(.1+k*.09)+'s'}});
@@ -332,10 +395,13 @@ const F=[['🖥','عارض أشعة ثلاثي الأبعاد','اعرض ملف�
 $('#fg').innerHTML=F.map((f,i)=>`<div class="card" data-r style="--d:${i*.08}s"><div class="ico">${f[0]}</div><h3>${f[1]}</h3><p>${f[2]}</p></div>`).join('');
 const M=['المرضى','المواعيد','العلاجات','صور الأشعة','المدفوعات','المختبرات','المخزون','التقارير','واتساب','نسخ احتياطي'];
 $('#mq').innerHTML=[...M,...M].map(m=>`<span>${m}</span>`).join('')+[...M,...M].map(m=>`<span>${m}</span>`).join('');
-const Q=[['هل بيانات المرضى آمنة؟','بياناتك على جهازك أنت لا على سيرفر طرف ثالث. كلمات المرور مشفّرة ولا تُخزَّن كنص، والترخيص مرتبط بعتاد الجهاز الرئيسي. والاستقبال لا يرى الأرقام المالية الحساسة.'],['كيف تعمل الفترة التجريبية؟','تستخدم البرنامج مجاناً لمدة شهرين على عيادتك بكل أقسامه. بعد انتهاء المدة يحتاج مفتاح التفعيل الدائم ليستمر في العمل.'],['هل يعمل البرنامج بدون إنترنت؟','نعم. يعمل محلياً بالكامل. تحتاج الإنترنت فقط لإرسال رسائل واتساب من جهازك.'],['ظهر تحذير من ويندوز عند التثبيت، هل هذا طبيعي؟','قد يعرض ويندوز تحذير SmartScreen عند تشغيل برنامج جديد غير موقّع رقمياً. اضغط «More info» ثم «Run anyway» للمتابعة.'],['كيف أربط جهاز الاستقبال بجهاز الطبيب؟','اختر «الجهاز الرئيسي» في جهاز واحد فيظهر رمز اقتران، ثم اضغط «بحث تلقائي» في الأجهزة الأخرى وأدخل الرمز. بدون سيرفر، وتتزامن التعديلات خلال ثوانٍ.'],['ماذا عن الدعم الفني؟','تتواصل مباشرة مع المطوّر م. محمود نجاجرة عبر الهاتف أو واتساب على \u2066+972569934309\u2069 أو عبر البريد الإلكتروني \u2066dentacare1soft@gmail.com\u2069.'],['كيف أنقل بياناتي أو أحميها من الضياع؟','يوفر البرنامج نسخة احتياطية يدوية بملف واحد، ونسخة تلقائية عند الإغلاق تحتفظ بآخر 10 نسخ، والاستعادة تحفظ نسخة أمان قبل استبدال البيانات. انسخ الملف إلى الجهاز الجديد واستعده.']];
+const Q=[['كيف تعمل الفترة التجريبية؟','تبدأ الفترة التجريبية، وهي شهر كامل، من تاريخ تفعيل البرنامج على جهازك، وتستخدم خلالها كل الأقسام على بيانات عيادتك. بعد انتهائها تختار بين التفعيل السنوي أو الدائم لتستمر في العمل.'],['ما الفرق بين التفعيل السنوي والدائم؟','السنوي دفعة واحدة كل سنة (175$ حالياً بدل 250$)، والدائم دفعة واحدة فقط بلا تجديد (650$ حالياً بدل 799$). المزايا نفسها، فاختر ما يناسب ميزانية عيادتك. وللتجديد أو الترقية تواصل معنا وسنوضح لك الخيارات.'],['ما هو العرض الحالي وإلى متى يستمر؟','عرض لفترة محدودة: السنوي 175$ بدل 250$، والدائم 650$ بدل 799$. قد ينتهي العرض في أي وقت، لذلك تواصل معنا لتأكيد السعر الساري قبل الشراء.'],['كيف أحصل على مفتاح التفعيل؟','من نافذة «التفعيل» داخل البرنامج تجد معرّف جهازك، أرسله لنا عبر واتساب أو البريد، وبعد إتمام الدفع نزوّدك بمفتاح التفعيل.'],['هل بيانات المرضى آمنة؟','بياناتك على جهازك أنت لا على سيرفر طرف ثالث. كلمات المرور مشفّرة ولا تُخزَّن كنص، والترخيص مرتبط بعتاد الجهاز الرئيسي. والاستقبال لا يرى الأرقام المالية الحساسة.'],['هل يعمل البرنامج بدون إنترنت؟','نعم. يعمل محلياً بالكامل. تحتاج الإنترنت فقط لإرسال رسائل واتساب من جهازك.'],['ماذا عن الدعم الفني؟','الدعم الفني مرافق لك مع التجربة المجانية والتفعيل السنوي والدائم. تتواصل مباشرة مع المطوّر م. محمود نجاجرة عبر الهاتف أو واتساب على \u2066+972569934309\u2069 أو عبر البريد الإلكتروني \u2066dentacare1soft@gmail.com\u2069.'],['كيف تُدعم المشاريع الخيرية؟','نخصص 20% من أرباح دنتا كير لدعم مشاريع خيرية، وتشارك كل عيادة في هذا الأثر عند تفعيل نسختها.'],['ظهر تحذير من ويندوز عند التثبيت، هل هذا طبيعي؟','قد يعرض ويندوز تحذير SmartScreen عند تشغيل برنامج جديد غير موقّع رقمياً. اضغط «More info» ثم «Run anyway» للمتابعة.'],['كيف أربط جهاز الاستقبال بجهاز الطبيب؟','اختر «الجهاز الرئيسي» في جهاز واحد فيظهر رمز اقتران، ثم اضغط «بحث تلقائي» في الأجهزة الأخرى وأدخل الرمز. بدون سيرفر، وتتزامن التعديلات خلال ثوانٍ.'],['كيف أنقل بياناتي أو أحميها من الضياع؟','يوفر البرنامج نسخة احتياطية يدوية بملف واحد، ونسخة تلقائية عند الإغلاق تحتفظ بآخر 10 نسخ، والاستعادة تحفظ نسخة أمان قبل استبدال البيانات. انسخ الملف إلى الجهاز الجديد واستعده.']];
 $('#fq').innerHTML=Q.map((q,i)=>`<div class="it${i?'':' on'}" data-r><button aria-expanded="${!i}"><span>${q[0]}</span><span class="ch">⌄</span></button><div class="a"><p>${q[1]}</p></div></div>`).join('');
 $$('#fq .it').forEach(it=>$('button',it).onclick=()=>{const o=it.classList.contains('on');$$('#fq .it').forEach(x=>{x.classList.remove('on');$('button',x).setAttribute('aria-expanded',false)});if(!o){it.classList.add('on');$('button',it).setAttribute('aria-expanded',true)}});
-$('#cmp').insertAdjacentHTML('beforeend',[['بعد سنة',1200],['بعد 3 سنوات',3600],['بعد 5 سنوات',6000]].map(([a,v])=>`<div class="cb"><span>${a}</span><i data-w="${v/60}"></i><b>${v.toLocaleString()}$</b></div><div class="cb o"><span>دنتا كير</span><i data-w="${699/60}"></i><b>699$</b></div>`).join(''));
+$('#cmp').insertAdjacentHTML('beforeend',[1,3,5].map(y=>`<div class="cg"><b>بعد ${y===1?'سنة':y+' سنوات'}</b>${[['اشتراك شهري',1200*y,''],['دنتا كير السنوي',175*y,'a'],['دنتا كير الدائم',650,'o']].map(([l,v,c])=>`<div class="cb ${c}"><span>${l}</span><i data-w="${v/60}"></i><b>${v.toLocaleString()}$</b></div>`).join('')}</div>`).join(''));
+$$('[data-wa]').forEach(a=>a.href='https://wa.me/972569934309?text='+encodeURIComponent(a.dataset.wa));
+const OFFER_END='';/* لإظهار عدّاد تنازلي لانتهاء العرض ضع تاريخاً هنا مثل '2026-12-31' */
+(function(){const el=$('#cdn');if(!OFFER_END||!el)return;const end=new Date(OFFER_END+'T23:59:59');const tick=()=>{let s=Math.floor((end-Date.now())/1000);if(s<=0){el.hidden=true;return}const d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60);el.hidden=false;el.innerHTML=`<span><b>${d}</b>يوم</span><span><b>${h}</b>ساعة</span><span><b>${m}</b>دقيقة</span><span><b>${s%60}</b>ثانية</span>`};tick();setInterval(tick,1000)})();
 function init3D(){const box=$('#t3box'),rg=$('#rg');if(!window.THREE){box.innerHTML='<p style="color:#9DBDBA;text-align:center;padding-top:120px">تعذّر تحميل العارض ثلاثي الأبعاد.</p>';return}
 const W=box.clientWidth,H=box.clientHeight,r=new THREE.WebGLRenderer({antialias:true,alpha:true});r.setPixelRatio(Math.min(2,devicePixelRatio));r.setSize(W,H);box.appendChild(r.domElement);
 const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(34,W/H,.1,50);cam.position.set(0,.3,7.4);
@@ -554,13 +620,13 @@ function setPatient(id){S.pid=id;S.refresh()}
 function go(i){S.idx=i;const st=$('#dapp .xstack');st.innerHTML='';st.append(S.pages[i].el);S.pages[i].refresh();$$('#dapp .xnb').forEach((b,j)=>b.classList.toggle('on',j===i));refreshTop()}
 function contactDlg(){const b=$h(`<div class="xcon"><div style="font-size:52px">👨‍💻</div><div class="xmu">المطوّر والدعم الفني</div><div class="xdn">${DEV}</div><div class="xdp" dir="ltr">${DEVP}</div></div>`);const d=dlg('التواصل مع المطوّر',b,400);
  b.append(btn('💬  تواصل معي مباشرة عبر واتساب','green',()=>open('https://wa.me/972569934309','_blank')),btn('✉️  راسلني عبر البريد الإلكتروني','',()=>location.href='mailto:'+MAIL),btn('📋  نسخ الرقم','gray',()=>{try{navigator.clipboard.writeText(DEVP)}catch(e){}toast('تم نسخ الرقم')}),btn('إغلاق','gray',()=>d.close()))}
-function activationDlg(){const b=$h(`<div class="xcon" style="align-items:stretch"><div class="xdn" style="text-align:center">🔑  تفعيل البرنامج</div><div style="text-align:center;font-weight:700;color:#0F766E">نسخة تجريبية - متبقي 56 يوم</div><div><b>معرّف هذا الجهاز</b> (أرسله للمطوّر للحصول على مفتاح التفعيل):</div><input readonly dir="ltr" value="DC-7F3A-91B2-C4E8" style="text-align:center;font-size:18px;font-weight:700;color:#0F766E"><div><b>مفتاح التفعيل:</b></div><input class="k" dir="ltr" placeholder="الصق مفتاح التفعيل هنا"></div>`),d=dlg('تفعيل البرنامج',b,540);
+function activationDlg(){const b=$h(`<div class="xcon" style="align-items:stretch"><div class="xdn" style="text-align:center">🔑  تفعيل البرنامج</div><div style="text-align:center;font-weight:700;color:#0F766E">نسخة تجريبية - متبقي 24 يوم</div><div><b>معرّف هذا الجهاز</b> (أرسله للمطوّر للحصول على مفتاح التفعيل):</div><input readonly dir="ltr" value="DC-7F3A-91B2-C4E8" style="text-align:center;font-size:18px;font-weight:700;color:#0F766E"><div><b>مفتاح التفعيل:</b></div><input class="k" dir="ltr" placeholder="الصق مفتاح التفعيل هنا"></div>`),d=dlg('تفعيل البرنامج',b,540);
  b.append(btn('💬  طلب مفتاح التفعيل عبر واتساب','green',()=>open('https://wa.me/972569934309','_blank')),btn('✔  تفعيل','',()=>msg('warn','فشل التفعيل','مفتاح التفعيل غير صحيح (هذه نسخة تجريبية للعرض فقط).')),btn('متابعة','gray',()=>d.close()))}
 function buildMain(){const root=$('#dapp');root.innerHTML='';const nm=DB.set.clinic_name;
  root.append($h(`<div class="xwtb"><span class="xwt">🦷 ${esc(nm)} - إدارة العيادة</span><span style="letter-spacing:.6em;padding-right:6px">–▢✕</span></div>`));
  const wb=$h('<div class="xwb"></div>'),sb=$h(`<div class="xsb"><div class="xlogo"><b>🦷</b>${esc(nm)}</div></div>`),main=$h('<div class="xmain"></div>'),top=$h('<div class="xtop"></div>');
  S.pc=mkCombo([{v:null,t:'— بدون تحديد (عرض جميع المرضى) —'}],true);const rebuild=()=>{const c=mkCombo([{v:null,t:'— بدون تحديد (عرض جميع المرضى) —'},...patFk()],true);S.pc=c;const old=top.querySelector('.xcmb');old.replaceWith(c.el);c.el.addEventListener('pick',()=>{const v=c.val();if(v!==S.pid)setPatient(v)})};
- top.append($h('<b>👤 المريض المحدد:</b>'),S.pc.el,btn('✖  إلغاء التحديد','gray',()=>setPatient(null)),$h('<span class="xinfo"></span>'),$h('<span class="xwait"></span>'),$h('<i style="flex:1"></i>'),$h('<span style="color:#B45309"><b>⏳ نسخة تجريبية - متبقي 56 يوم</b></span>'),btn('🔑  التفعيل','gray',activationDlg),$h(`<span style="color:${isDoc()?'#0F766E':'#B45309'}"><b>${esc(S.user.full_name||S.user.username)}</b> (${S.user.role})</span>`),btn('تسجيل الخروج','danger',showLogin));
+ top.append($h('<b>👤 المريض المحدد:</b>'),S.pc.el,btn('✖  إلغاء التحديد','gray',()=>setPatient(null)),$h('<span class="xinfo"></span>'),$h('<span class="xwait"></span>'),$h('<i style="flex:1"></i>'),$h('<span style="color:#B45309"><b>⏳ تجريبية - متبقي 24 يوم</b></span>'),btn('🔑  التفعيل','gray',activationDlg),$h(`<span style="color:${isDoc()?'#0F766E':'#B45309'}"><b>${esc(S.user.full_name||S.user.username)}</b> (${S.user.role})</span>`),btn('تسجيل الخروج','danger',showLogin));
  rebuild();S.rebuild=rebuild;const _r=S.refresh;S.refresh=()=>{S.pages[S.idx]&&S.pages[S.idx].refresh();if(!top.querySelector('.xcmb input').matches(':focus'))rebuild();refreshTop()};
  const spec=[['📊  لوحة التحكم',dashboard,0],['👥  المرضى',patientsPage,0],['📅  المواعيد',apptPage,0],['🦷  العلاجات',treatPage,1],['🩻  صور الأشعة',xrayPage,1],['💵  المدفوعات',payPage,0],['🧪  مختبرات الأسنان',labsPage,0],['📋  طلبيات المختبر',ordersPage,0],['📦  المخزون',invPage,1],['🧾  المصروفات',expPage,1],['📈  التقارير',reportsPage,1],['👤  المستخدمون',usersPage,1],['⚙️  الإعدادات',settingsPage,0]];
  S.pages=[];S.pid=null;spec.forEach(([l,f,dOnly])=>{if(dOnly&&!isDoc())return;const i=S.pages.length,b=document.createElement('button');b.className='xnb';b.textContent=l;b.onclick=()=>go(i);sb.append(b);S.pages.push(f())});
@@ -587,7 +653,7 @@ const bar=$('#bar');addEventListener('scroll',()=>bar.style.transform=`scaleX(${
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');io.unobserve(t);
 if(t.id==='mock'){$$('#bars i').forEach((b,i)=>setTimeout(()=>b.style.height=b.dataset.h+'%',i*110));$('#ap').classList.add('in');$$('#ap div').forEach((d,i)=>d.style.transitionDelay=(.4+i*.25)+'s');count(t)}
-if(t.id==='stats')count(t);
+if(t.id==='stats'||t.id==='impring')count(t);
 if(t.id==='sg')t.classList.add('in');
 if(t.id==='cmp')$$('[data-w]',t).forEach((b,i)=>setTimeout(()=>b.style.width=b.dataset.w+'%',i*140))}),{threshold:.2});
 $$('[data-r],#mock,#stats,#sg,#cmp').forEach(e=>io.observe(e));
